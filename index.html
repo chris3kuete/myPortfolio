@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chris Kuete Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b5765daba3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ck3-logo1.png" class="logo" width="00" height="130">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" ></i>   
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p> Java Developer</p>
+                <h1>Hi, I'm <span>Chris</span></h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!----------About Section--------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic (3).png" width="100px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Passionate Developer who loves to build real world projects to apply what i have learnt, facilitates<br>
+                        and improve people life. I'm always looking for better and ethical ways to solve problems faced by businesses in their day-to-day life. <br>
+                        
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML&CSS</span><br>Designing Web/App Interfaces</li>
+                                <li><span>C#</span><br>.NET Framework</li>
+                                <li><span>Java</span><br>Spring Boot Framework</li>
+                                <li><span>Database</span><br>MySQL, PostGresql</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>IT Desktop Analyst at Salesforce,Software Developer at Strive Athletic</li>
+                                <li><span>2022 - 2023</span><br>Freelance Software Developer</li>
+                                <li><span>2020 - 2022</span><br>IT Help Desk Technician at Philips Respironics</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>Associate In Software Development at Community College Of Allegheny County</li>
+                                <li><span>2022</span><br>Certificate In Software Development</li>
+                                <li><span>2015</span><br>Bachelor in Business Administration</li>
+                            </ul>
+                        </div>
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-----------services----------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend</h2>
+                    <p>Building web applications and websites with Spring Boot, C#, Flask and MySQL. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Frontend GUI</h2>
+                    <p>Experienced in building complex UI's for web apps and websites with html, css and JavaScript</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Building REST API</h2>
+                    <p>Experienced in building and testing REST API with Spring Boot, Flask and Postman</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <!--------------portfolio------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/shop1.jpeg" height="310">
+                    <div class="layer">
+                        <h3> Store-FrontEnd</h3>
+                        <p>This is the front end of an e-commerce store built with HTML, CSS, Bootstrap and JavaScript.
+                             The store is for a brand that intend to market and boost it sales with this e-commerce website.
+                             Later on, this front-end will be joined with a back-end using REST-API, to make it a Dynamic e-commerce website.
+                            The website is hosted on github </p>
+                             <a href="https://chris3kuete.github.io/Store-frontEnd/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/rest-api 1.png" height="310">
+                    <div class="layer">
+                        <h3> Banking App REST API</h3>
+                        <p>This is a Banking app REST API built with Spring Boot to simulate how an ATM machine works.
+                            The program builds REST API for:
+                            Adding an Account, Getting an Account, Getting all Accounts,
+                            Deleting an Account DEPOSIT and WITHDRAW money, TRANSFER money between accounts, show TRANSACTIONS made by account</p>
+                             <a href="https://github.com/chris3kuete/chrisbanking-app-REST-API"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/time-clock-1.png" height="310">
+                    <div class="layer">
+                        <h3> Time-Clock App</h3>
+                        <p>This is an app that serves as a time clock that employees can use to check-in and out of work. At the begining of the shift,
+                            employee click on the check-in button to check-in At the End of the shift,
+                             employee click on the checkout button and the number of hours he worked is displayed.</p>
+                             <a href="https://github.com/chris3kuete/Time-Clock"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!--------------Contact--------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chrisdkuete@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>4123563334</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                    </div>
+                    <a href="images/dev-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="c0026051-2afb-4bd7-98b8-f34027ae7c11">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Chris Kuete. Made with <i class="fa-regular fa-heart"></i> by Chris Kuete </p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+</script>
+
+    
+</body>
+</html>
